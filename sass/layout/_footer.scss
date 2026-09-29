@@ -1,0 +1,106 @@
+@use "../abstracts/abstracts" as abs;
+@use "../components/components" as cpn;
+
+footer {
+  background-color: black;
+  .footer-container {
+    padding: 48px 32px;
+    img {
+      margin-bottom: 38px;
+    }
+    p {
+      color: white;
+      font-family: abs.$text-font;
+      font-size: 16px;
+      line-break: 26px;
+      font-weight: 200;
+      margin-bottom: 38px;
+    }
+    @include abs.breakpoint(tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 56px 40px;
+      p {
+        width: 300px;
+      }
+    }
+    @include abs.breakpoint(desktop) {
+      display: flex;
+      align-items: flex-start;
+      padding: 56px 40px;
+      margin-bottom: 0;
+      img {
+        margin-right: 140px;
+      }
+      p {
+        width: 400px;
+        margin-right: 280px;
+      }
+    }
+    @include abs.breakpoint(largedesktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 56px 40px;
+      margin-bottom: 0;
+      img {
+        margin-right: 140px;
+      }
+      p {
+        font-size: 18px;
+        margin-right: 100px;
+      }
+    }
+  }
+}
+.footer-container2 {
+  margin: 0;
+  background-color: abs.$beyge;
+  padding: 48px 32px;
+  img {
+    margin-bottom: 38px;
+  }
+  p {
+    font-family: abs.$text-font;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 38px;
+  }
+  @include abs.breakpoint(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 56px 40px;
+    p {
+      width: 300px;
+    }
+  }
+  @include abs.breakpoint(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 165px;
+    img {
+      width: 160px;
+    }
+    p {
+      width: 400px;
+    }
+  }
+  @include abs.breakpoint(largedesktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 165px;
+    img:nth-of-type(1) {
+      width: 200px;
+    }
+    p {
+      font-size: 16px;
+    }
+    img:nth-of-type(2) {
+      width: 130px;
+    }
+  }
+}

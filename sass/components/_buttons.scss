@@ -1,0 +1,17 @@
+@use "../abstracts/abstracts" as abs;
+
+@mixin button1() {
+  display: inline-block;
+  background-color: abs.$black;
+  padding: 24px 35px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: abs.$title-font;
+  letter-spacing: 3.64px;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+  font-weight: 500;
+}
